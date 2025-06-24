@@ -1,0 +1,408 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar-utama {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.container-navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo .nama-utama {
+    color: #4682B4;
+}
+
+.logo .nama-brand {
+    color: #87CEEB;
+}
+
+.menu-navigasi {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-navigasi li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.menu-navigasi li a:hover,
+.menu-navigasi li a.aktif {
+    background: rgba(135, 206, 235, 0.2);
+    color: #4682B4;
+    transform: translateY(-2px);
+}
+
+.tombol-login-member {
+    background: #87CEEB !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 25px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.tombol-login-member:hover {
+    background: #4682B4 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(135, 206, 235, 0.4) !important;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.bagian-hero {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 100%);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.container-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.konten-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.konten-hero p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.tombol-hero {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tombol-primer,
+.tombol-sekunder {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tombol-primer {
+    background: #4682B4;
+    color: white;
+}
+
+.tombol-primer:hover {
+    background: #2E5984;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(70, 130, 180, 0.4);
+}
+
+.tombol-sekunder {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.tombol-sekunder:hover {
+    background: white;
+    color: #4682B4;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+.gambar-hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Mengapa */
+.bagian-mengapa {
+    padding: 80px 0;
+    background: white;
+}
+
+.container-mengapa {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-mengapa h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.grid-keunggulan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.kartu-keunggulan {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.kartu-keunggulan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(135, 206, 235, 0.2);
+}
+
+.ikon-keunggulan {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.kartu-keunggulan h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.kartu-keunggulan p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Section Olahraga */
+.bagian-olahraga {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.container-olahraga {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-olahraga h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.grid-olahraga {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.kartu-olahraga {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.kartu-olahraga:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(135, 206, 235, 0.2);
+}
+
+.kartu-olahraga img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kartu-olahraga h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0 10px;
+    font-weight: 600;
+}
+
+.kartu-olahraga p {
+    color: #666;
+    padding: 0 20px 20px;
+    line-height: 1.6;
+}
+
+/* Section Testimoni */
+.bagian-testimoni {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 100%);
+}
+
+.container-testimoni {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-testimoni h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.grid-testimoni {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.kartu-testimoni {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.kartu-testimoni:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.kartu-testimoni p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.profil-testimoni h4 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profil-testimoni span {
+    color: #87CEEB;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.footer-utama {
+    background: white;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #e9ecef;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-footer p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.kartu-keunggulan,
+.kartu-olahraga,
+.kartu-testimoni {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,458 @@
+/* Header Author */
+.header-author {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 100%);
+    text-align: center;
+}
+
+.container-header-author {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-author h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.header-author p {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Bagian Author */
+.bagian-author {
+    padding: 80px 0;
+    background: white;
+}
+
+.container-author {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.profil-author {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.foto-author {
+    text-align: center;
+    position: relative;
+}
+
+.foto-author img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #87CEEB;
+    box-shadow: 0 20px 40px rgba(135, 206, 235, 0.3);
+    transition: all 0.3s ease;
+}
+
+.foto-author img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(135, 206, 235, 0.4);
+}
+
+.status-online {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #28a745;
+    font-weight: 500;
+}
+
+.dot-online {
+    width: 12px;
+    height: 12px;
+    background: #28a745;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+}
+
+.info-author h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.nim {
+    font-size: 1.1rem;
+    color: #87CEEB;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.deskripsi {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.detail-info {
+    display: grid;
+    gap: 20px;
+}
+
+.info-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.info-item p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Bagian Hobi */
+.bagian-hobi {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.container-hobi {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-hobi h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.grid-hobi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.kartu-hobi {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.kartu-hobi:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(135, 206, 235, 0.2);
+}
+
+.ikon-hobi {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.kartu-hobi h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.kartu-hobi p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Bagian Keahlian */
+.bagian-keahlian {
+    padding: 80px 0;
+    background: white;
+}
+
+.container-keahlian {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-keahlian h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.grid-keahlian {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.item-keahlian {
+    background: white;
+    padding: 20px 15px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.item-keahlian:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.item-keahlian.frontend {
+    border-color: #61dafb;
+    color: #61dafb;
+}
+
+.item-keahlian.frontend:hover {
+    background: #61dafb;
+    color: white;
+}
+
+.item-keahlian.backend {
+    border-color: #68d391;
+    color: #68d391;
+}
+
+.item-keahlian.backend:hover {
+    background: #68d391;
+    color: white;
+}
+
+.item-keahlian.database {
+    border-color: #f6ad55;
+    color: #f6ad55;
+}
+
+.item-keahlian.database:hover {
+    background: #f6ad55;
+    color: white;
+}
+
+.item-keahlian.tools {
+    border-color: #fc8181;
+    color: #fc8181;
+}
+
+.item-keahlian.tools:hover {
+    background: #fc8181;
+    color: white;
+}
+
+.item-keahlian.design {
+    border-color: #b794f6;
+    color: #b794f6;
+}
+
+.item-keahlian.design:hover {
+    background: #b794f6;
+    color: white;
+}
+
+.item-keahlian.mobile {
+    border-color: #4fd1c7;
+    color: #4fd1c7;
+}
+
+.item-keahlian.mobile:hover {
+    background: #4fd1c7;
+    color: white;
+}
+
+/* Bagian Sosial */
+.bagian-sosial {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.container-sosial {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-sosial h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.grid-sosial {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.kartu-sosial {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #f0f0f0;
+}
+
+.kartu-sosial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+.ikon-sosial {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.kartu-sosial.github .ikon-sosial {
+    background: #333;
+    color: white;
+}
+
+.kartu-sosial.linkedin .ikon-sosial {
+    background: #0077b5;
+    color: white;
+}
+
+.kartu-sosial.instagram .ikon-sosial {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+
+.kartu-sosial.email .ikon-sosial {
+    background: #ea4335;
+    color: white;
+}
+
+.info-sosial {
+    text-align: left;
+    flex: 1;
+}
+
+.info-sosial h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.info-sosial p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.info-sosial span {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Bagian Quote */
+.bagian-quote {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 100%);
+    text-align: center;
+}
+
+.container-quote {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-quote blockquote {
+    font-size: 1.8rem;
+    color: white;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+}
+
+.container-quote blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    opacity: 0.3;
+}
+
+.container-quote cite {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: normal;
+}
+
+/* Animasi */
+.kartu-hobi,
+.item-keahlian,
+.kartu-sosial {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.kartu-hobi:nth-child(even),
+.kartu-sosial:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+.kartu-hobi:nth-child(3n),
+.kartu-sosial:nth-child(3n) {
+    animation-delay: 0.4s;
+}
+
+.item-keahlian:nth-child(2n) {
+    animation-delay: 0.1s;
+}
+
+.item-keahlian:nth-child(3n) {
+    animation-delay: 0.2s;
+}
+
+.item-keahlian:nth-child(4n) {
+    animation-delay: 0.3s;
+}
