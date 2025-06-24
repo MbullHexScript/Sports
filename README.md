@@ -16,7 +16,7 @@
 ## 🔗 Live Preview
 
 > Klik tautan berikut untuk melihat langsung website-nya:
-🌍 [Lihat Website Awiee Bar](https://NaufalNyaa.github.io/coffeshop/)
+🌍 [Lihat Website Awiee Bar](https://mbullhexscript.github.io/Sports/)
 
 ---
 
