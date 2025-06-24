@@ -16,7 +16,7 @@
 ## 🔗 Live Preview
 
 > Klik tautan berikut untuk melihat langsung website-nya:
-🌍 [Lihat Website Awiee Bar](https://mbullhexscript.github.io/Sports/)
+🌍 [Lihat Website NaufalNyaa SportEase](https://mbullhexscript.github.io/Sports/)
 
 ---
 
